@@ -23,11 +23,12 @@
             <!-- DESKTOP MENU -->
 
             <ul class="navlist flex gap-3">
-                <li><a href="">Home</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contacts</a></li>
+                <li onclick="GotoHome()"><a href="#">Home</a></li>
+                <li onclick="GotoMenu()"><a href="#">Menu</a></li>
+                <li onclick="GotoServices()"><a href="#">Services</a></li>
+                <li onclick="GotoAbout()"><a href="#">About</a></li>
+                <li onclick="GotoContact()"><a href="#">Contacts</a></li>
+                <li onclick="GotoReviews()"><a href="#">Reviews</a></li>
             </ul>
 
             <div class="desktop-action flex gap-2">
@@ -68,8 +69,8 @@
     </header>
 
     <!-- SECTION PART -->
-    <section>
-        <div class="hero-section flex wraper gap-4">
+    <section id="home">
+        <div class="hero-section flex wraper gap-4" >
             <div class="content">
                 <h1>Enjoy Your Delicious
                     <span>Food</span>
@@ -78,7 +79,7 @@
                     We will fill your tummy with delicious <br> food with fast delivery.
                 </p>
                 <div class="flex gap-2">
-                    <a href="" class="btn">Order now</a>
+                    <button href="" class="btn" onclick="GotoOrder()">Order now</button>
                     <a href="" class="social-media-icon">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
@@ -101,7 +102,7 @@
 
     </section>
 
-    <section>
+    <section id="service">
         <div class="wraper pad-top">
             <div class="text-center">
                 <h5>Our Services</h5>
@@ -134,8 +135,8 @@
         </div>
     </section>
 
-    <section>
-        <div class="wraper pad-top">
+    <section id="menu">
+        <div class="wraper pad-top" id="order">
             <div class="text-center">
                 <h5>Our Menu</h5>
                 <h2>The Most Popular</h2>
@@ -190,7 +191,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="review">
         <div class="wraper pad-top flex gap-3">
             <div class="image-cointainer">
                 <img src="./images/delivery-boy-with-phone.png" alt="">
@@ -279,7 +280,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="about">
         <div class="wraper pad-top">
             <div class="app-container flex gap-3">
                 <div class="image-container">
@@ -296,7 +297,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="contact">
         <div class="wraper pad-top">
             <div class="text-center">
                 <h5>Our Subscribe</h5>
